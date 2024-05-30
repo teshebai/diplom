@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/home_icon"
+        android:title="Главная"
+        />
+    <item
+        android:id="@+id/rentFragment"
+        android:enabled="true"
+        android:icon="@drawable/rent_icon"
+        android:title="Аренда"/>
+    <item
+        android:id="@+id/cartFragment"
+        android:enabled="true"
+        android:icon="@drawable/fav_icon"
+        android:title="Избранное"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:enabled="true"
+        android:icon="@drawable/profile_icon"
+        android:title="Профиль">
+    </item>
+</menu>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "790278978690",
+    "project_id": "shina-ea73d",
+    "storage_bucket": "shina-ea73d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790278978690:android:e5940a7e45f15606de889b",
+        "android_client_info": {
+          "package_name": "kz.sdk.shina"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRe0vAcpCTSYREjvrB2g0ZevNX6C9DE6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

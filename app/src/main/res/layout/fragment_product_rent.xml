@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/product_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                style="@style/Mont"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img"
+                tools:text="Audi A6, 2005 года" />
+
+            <ImageView
+                android:id="@+id/fav_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/fav_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img" />
+
+            <TextView
+                android:id="@+id/price"
+                style="@style/Mont.SemiBold"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name"
+                tools:text="8500000 ₸" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="в час"
+                android:textSize="16sp"
+                style="@style/Mont"
+                android:layout_marginStart="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/price"
+                app:layout_constraintStart_toEndOf="@+id/price"
+                app:layout_constraintTop_toTopOf="@+id/price" />
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/Mont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Кузов"
+                android:textColor="@color/secondaty_text"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/price" />
+
+            <TextView
+                android:id="@+id/type"
+                style="@style/Mont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView8"
+                tools:text="Седан" />
+
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/Mont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Объем двигателя, л"
+                android:textColor="@color/secondaty_text"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/volume"
+                style="@style/Mont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView9"
+                tools:text="5" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/Mont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Пробег"
+                android:textColor="@color/secondaty_text"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/millage"
+                style="@style/Mont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView10"
+                tools:text="160000 км" />
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/Mont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Коробка передачь"
+                android:textColor="@color/secondaty_text"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/transmission"
+                style="@style/Mont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView11"
+                tools:text="Автомат" />
+
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/Mont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Цвет"
+                android:textColor="@color/secondaty_text"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/color"
+                style="@style/Mont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView12"
+                tools:text="Красный" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        android:layout_height="wrap_content"
+        style="@style/Mont.SemiBold"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:backgroundTint="@color/main_color"
+        android:layout_marginHorizontal="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginVertical="10dp"
+            android:text="Оформить"/>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
